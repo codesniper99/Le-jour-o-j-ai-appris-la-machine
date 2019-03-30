@@ -1,21 +1,33 @@
 
 
-print ("done not")
+
 import sklearn
 from sklearn import tree
+import pandas as pd
 
 #Height Weight Index
-x=[[174,	96,		4],[189,	87,		2],[185,	110,	4],[195,	104,	3],
-[149,	61,		3],[189,	104,	3],[147,	92,		5],[154,	111,	5],
-[174,	90,		3]
-]
+data = pd.read_csv(r"C:\\Users\\Akhil\\Desktop\\Le-jour-o-j-ai-appris-la-machine\\Datasets\\500_Person_Gender_Height_Weight_Index.csv")
+print(data)
 
-y= ['Male','Male','Female','Female','Male','Male','Male','Male','Male']
+x = data.iloc[: , 1:].values
+y = data.iloc[: , 0].values
+
+from sklearn.model_selection import train_test_split
+x_train , x_test  , y_train , y_test = train_test_split (x , y,test_size = 0.25 ,random_state = 0)
+
+print(data.info())
+
+print(data.describe())
+
+print ("done not")
+
+
 print(sklearn.__path__)
 clf = tree.DecisionTreeClassifier()
-clf= clf.fit(x,y)
+clf= clf.fit(x_train,y_train)
 print("wait")
-prediction = clf.predict([[169,103,4]])
+prediction = clf.predict(x_test)
+print (y_test)
 
 print (prediction)
 
