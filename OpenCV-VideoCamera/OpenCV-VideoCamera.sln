@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "OpenCV-VideoCamera", "OpenCV-VideoCamera.pyproj", "{E85352A2-2150-4EFF-A08D-553DB879022E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E85352A2-2150-4EFF-A08D-553DB879022E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E85352A2-2150-4EFF-A08D-553DB879022E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C1FA578-2FB9-4E21-96BE-92C8E2578CCC}
+	EndGlobalSection
+EndGlobal

@@ -2,16 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>47118699-6ac8-4629-8984-d728c1fbf5ae</ProjectGuid>
+    <ProjectGuid>e85352a2-2150-4eff-a08d-553db879022e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Opencv_python.py</StartupFile>
+    <StartupFile>OpenCV_VideoCamera.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Opencv-python</Name>
-    <RootNamespace>Opencv-python</RootNamespace>
-    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+    <Name>OpenCV-VideoCamera</Name>
+    <RootNamespace>OpenCV-VideoCamera</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,14 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="class1.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Opencv_python.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda37-64" />
-    <InterpreterReference Include="Global|PythonCore|3.7" />
+    <Compile Include="OpenCV_VideoCamera.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
