@@ -27,7 +27,7 @@ while True:
     check,frame=video.read()
     print(frame)
     #color
-    face_cascade = cv2.CascadeClassifier('C:/Users/Akhil/Documents/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('C:/Users/Akhil/Documents/opencv/sources/data/haarcascades/haarcascade_eye.xml')
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     faces = face_cascade.detectMultiScale(gray, 1.01, 5)
@@ -38,11 +38,11 @@ while True:
     print(x,y,w,h)
     cv2.imshow("COLOR FRAME",frame)
     #grey
-    color = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-    cv2.imshow("GRAY FRAME",color)
+    #color = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+    #cv2.imshow("GRAY FRAME",color)
     #blur
-    color = cv2.GaussianBlur(color,(21,21),0)
-    cv2.imshow("GAUSSIAN BLUR FRAME",color)
+   # color = cv2.GaussianBlur(color,(21,21),0)
+   # cv2.imshow("GAUSSIAN BLUR FRAME",color)
 
     key = cv2.waitKey(1)
    # cv2.destroyAllWindows()
