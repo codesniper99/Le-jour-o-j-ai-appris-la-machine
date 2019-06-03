@@ -1,4 +1,5 @@
 import cv2
+import numpy as np
 img = cv2.imread("C:/Users/Akhil/Desktop/opencv/OpenCV/lena.jpg",1)
 print(img.shape)
 
@@ -32,5 +33,22 @@ for (x,y,w,h) in faces:
     
 print(x,y,w,h)
 cv2.imshow('FACE DETECTION',img)
+cv2.waitKey(0)
+
+
+# GAUSSIAN NOISE
+row,col= gray.shape
+mean = 0
+var = 0.1
+sigma = var**0.1
+gauss = np.random.normal(mean,sigma,(row,col))
+gauss = gauss.reshape(row,col)
+gauss = np.uint8(gauss)
+noisy = cv2.add(gray,gauss)
+
+
+cv2.imshow("gaussian gauss", gauss)
+cv2.imshow("gaussian",  noisy)
+
 cv2.waitKey(0)
 cv2.destroyAllWindows()
