@@ -2,7 +2,7 @@
 import cv2
 import numpy as np
 
-video = cv2.VideoCapture(0)
+video = cv2.VideoCapture("C:\\Users\\Akhil\\Desktop\\endoscopy-viedos\\DrArif_2_0_Deg_ST_Aux\\DrArif_2_0_Deg_ST_Aux.avi")
 
 ok,frame1 = video.read()
 
@@ -15,7 +15,7 @@ while(1):
     ok,frame=video.read()
     frame = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 
-    img = cv2.subtract(frame1,frame)
+    img = cv2.subtract(frame,frame1)
     height = img.shape[0]
     width = img.shape[1]
 
